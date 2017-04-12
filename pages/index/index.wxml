@@ -1,10 +1,83 @@
 <!--index.wxml-->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="head">
+    <view class="title">{{userInfo.nickName}}</view>
+    <view class="nav">
+        <view class="nav-item {{active==1?'active':''}}" data-type="1" bindtap="navTap">基本信息</view>
+        <view class="nav-item {{active==2?'active':''}}" data-type="2" bindtap="navTap">工作经历</view>
+        <view class="nav-item {{active==3?'active':''}}" data-type="3" bindtap="navTap">项目介绍</view>
+        <view class="nav-item {{active==4?'active':''}}" data-type="4" bindtap="navTap">其他</view>
+    </view>
+  </view>  
+  <view class="ct">
+    <view class="ct-item">
+        <view class="ct-item-title">基本信息</view>
+        <view class="ct-item-detail">
+            <view class="detail-item">
+                <view class="detail-item-left">姓名：</view>
+                <view class="detail-item-right">隔离室</view>
+            </view>
+            <view class="detail-item">
+                <view class="detail-item-left">姓别：</view>
+                <view class="detail-item-right">男</view>
+            </view>
+            <view class="detail-item">
+                <view class="detail-item-left">年龄：</view>
+                <view class="detail-item-right">18</view>
+            </view>
+            <view class="detail-item">
+                <view class="detail-item-left">婚姻状态：</view>
+                <view class="detail-item-right">未婚</view>
+            </view>
+            <view class="detail-item">
+                <view class="detail-item-left">工作年限：</view>
+                <view class="detail-item-right">4年</view>
+            </view>
+            <view class="detail-item">
+                <view class="detail-item-left">学历：</view>
+                <view class="detail-item-right">专科</view>
+            </view>
+            <view class="detail-item">
+                <view class="detail-item-left">邮箱：</view>
+                <view class="detail-item-right">xuyintao@126.com</view>
+            </view>
+            <view class="detail-item">
+                <view class="detail-item-left">电话：</view>
+                <view class="detail-item-right">18811111111</view>
+            </view>
+        </view>
+    </view>
+    <view class="ct-item">
+        <view class="ct-item-title">工作经历</view>
+        <view class="ct-item-detail">
+            <view class="detail-item detail-row">
+                <view class="detail-item-left">公司名称：</view>
+                <view class="detail-item-right">钛铂新媒体</view>
+            </view>
+            <view class="detail-item detail-row">
+                <view class="detail-item-left">在职时间：</view>
+                <view class="detail-item-right">2014/11/01--2017/04/12</view>
+            </view>
+            <view class="detail-content-row">
+                <view class="detail-item-left">工作内容：</view>
+                <view class="detail-item-right detail-p">工作内容测试，滚滚长江东逝水，浪花淘尽英雄，是非成败转头空，青山依旧在，几度夕阳红。</view>
+            </view>
+        </view>
+        <view class="ct-item-detail">
+            <view class="detail-item detail-row">
+                <view class="detail-item-left">公司名称：</view>
+                <view class="detail-item-right">钛铂新媒体</view>
+            </view>
+            <view class="detail-item detail-row">
+                <view class="detail-item-left">在职时间：</view>
+                <view class="detail-item-right">2014/11/01--2017/04/12</view>
+            </view>
+            <view class="detail-content-row">
+                <view class="detail-item-left">工作内容：</view>
+                <view class="detail-item-right detail-p">工作内容测试，滚滚长江东逝水，浪花淘尽英雄，是非成败转头空，青山依旧在，几度夕阳红。</view>
+            </view>
+        </view>
+    </view>
+    
   </view>
 </view>

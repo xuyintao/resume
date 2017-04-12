@@ -1,21 +1,72 @@
 /**index.wxss**/
-.userinfo {
+.head{
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  background: #fff;
+}
+.title{
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: bold;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: center;
+  font-size: 36rpx;
+  border-top: 2rpx solid #ccc;
+  border-bottom: 2rpx solid #ccc;
+}
+.nav-item{
+  flex:auto;
+  text-align: center;
+  border-right: 2rpx solid #ccc;
+  line-height: 60rpx;
+}
+.nav-item:last-child{
+  border:none;
+}
+.nav-item.active{
+  color:#1AAD16;
+}
+.ct{
+  margin-top:150rpx;
+  padding: 10rpx;  
+}
+.ct-item{
+  margin-top:20rpx;
+}
+.ct-item-title{
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.ct-item-detail{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin:10rpx 20rpx;
+}
+.detail-item{
+  display: flex;
+  flex-flow: row nowrap;
+  min-width: 50%;
+  line-height: 50rpx;
+}
+.detail-row{
+  width:100%;
+}
+.detail-item-left{
+  flex:none;
+  margin-right: 10rpx;
+}
+.detail-item-right{
+  flex:none;
+}
+.detail-p{
+  text-indent: 30rpx;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-}
